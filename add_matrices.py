@@ -80,3 +80,28 @@ test = add(matrix1, matrix2)
 print(test)
 
 
+fruits = ["loquat", "jujube", "pear", "watermelon", "apple"]
+colors = ["brown", "orange", "green", "pink", "purple"]
+
+for fruit in fruits:
+	for color in colors:
+		print(color,fruit)
+
+# Indexing with enumerate 
+
+fruits = ["loquat", "jujube", "pear", "watermelon", "apple"]
+colors = ["brown", "orange", "green", "pink", "purple"]
+
+for n, fruit in enumerate(fruits):
+	print(colors[n], fruit)
+
+
+#Using the built-in zip function 
+
+colors = ["brown", "orange", "green", "pink", "purple"]
+fruits = ["loquat", "jujube", "pear", "watermelon", "apple"]
+for item in zip(fruits, colors):
+	print(item)
+
+
+
