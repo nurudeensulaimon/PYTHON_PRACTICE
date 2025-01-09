@@ -102,6 +102,34 @@ colors = ["brown", "orange", "green", "pink", "purple"]
 fruits = ["loquat", "jujube", "pear", "watermelon", "apple"]
 for item in zip(fruits, colors):
 	print(item)
+# Making a set with a for loop
+fruits_last_week = """
+apple
+Apple
+lime
+pear
+lime
+Lemon
+"""
+
+state_to_abbr = {
+	"New South Wales": "NSW", 
+	"Queens land": "OLD",
+	"South Australia": "SA", 
+	"Tasmania": "TAS",
+	"Victoria": "VIC",
+	"Western Australia": "WA",
+	}
+
+abbr_to_state = {}
+for state, abbreviation in state_to_abbr.items():
+    abbr_to_state[abbreviation] = state
+
+    abbr_to_state
+
+
+
+
 
 
 
