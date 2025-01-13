@@ -23,3 +23,19 @@ test=add(matrix1, matrix2, matrix3)
 print(test)
 
 
+def add(matrix1, matrix2):
+	"""Add corresponding numbers in given 2-D matrices."""
+	combined = []
+	for i in range(len(matrix1)):
+		row = []
+		for j in range(len(matrix1[i])):
+			row.append(matrix1[i][j] + matrix2[i][j])
+		combined.append(row)
+	return combined 
+
+matrix1 = [[1,9], [7,3]]
+matrix2 = [[5,-4], [3,3]]
+
+test=add(matrix1, matrix2)
+print(test)
+
