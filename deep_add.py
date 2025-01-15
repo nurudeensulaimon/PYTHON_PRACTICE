@@ -62,4 +62,16 @@ def add(matrix1, matrix2):
 			row.append(n + m)
 		combined.append(row)
 	return combined
-	
+
+def group_by_lengths(text):
+	lengths = {}
+	for word in text.split():
+		length = len(word)
+		if length in lengths:
+			lengths[length].append(word)
+		else:
+			lengths[length]=[word]
+
+test= group_by_lengths("I love Kike Rafiu")
+print(test)
+
