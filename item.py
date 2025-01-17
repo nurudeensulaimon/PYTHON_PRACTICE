@@ -39,4 +39,29 @@ for item in items:
 		items_by_color[item.color]= []
 	items_by_color[item.color].append(item.name)
 
-items_by_color 
+print(items_by_color)
+
+
+items_by_color = {}
+for item in items:
+	items_by_color.setdefault(item.color, []).append(item.name)
+
+print(items_by_color)
+
+ 
+
+ # Defining anagram
+
+
+def anagram(string1, string2):
+	string1 = string1.replace(" ", "").lower()
+	string2 = string2.replace(" ", "").lower()
+	return sorted(string1) == sorted(string2)
+
+test1 = anagram("eat", "ate")
+test2= anagram("listen", "silent")
+test3= anagram("cafe", "nafe")
+print(test1)
+print(test2)
+print(test3)
+
