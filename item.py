@@ -65,3 +65,9 @@ print(test1)
 print(test2)
 print(test3)
 
+
+#Slicing a String Element 
+message = "value exalt apprise esteem"
+test=message[6:19:2]
+print(test)
+
