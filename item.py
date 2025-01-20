@@ -71,3 +71,48 @@ message = "value exalt apprise esteem"
 test=message[6:19:2]
 print(test)
 
+for n in range(2,5):
+	print(n)
+
+# A TAIL FUNCTION THAT RETURNS THE lAST ELEMENTS 
+
+def tail(data,count):
+	""" Returns the last 'elements of 'data'.
+	Args:
+	    data: A list or any iterable data type.
+	    count. The number of elements to return from the end.
+
+	    Returns 
+	    The last 'count' elements if data is a list, or the last 'count'
+	    character(s) if 'data' is a string. If count is 1, returns 
+	    from the end. 
+
+	Returns:
+	    The last 'count' elements if 'data' is a list, or the last 'count'
+	    character(s) if 'data' is  a string. If count is 1, returns 
+	    a single element.
+
+	    """
+
+	try:
+	 	# Ensure count is a postive integer
+	 	if count <= 0:
+	 		raise ValueError("Count must be a positive integer")
+	 	# If the input is not iterable, convert it to a list or 
+	 	# string representation
+	 	if not isinstance(data,(list,str)):
+	 		data = str(data)
+
+	 	#Return the last 'count' elements 
+	 	if isinstance(data, list) or isinstance(data, str):
+	 		return data[-count:] if count > 1 else data[-1]
+	 	else:
+	 	    raise TypeError("Unsupported data type")
+	except (TypeError, IndexError) as e:
+		return f"Error: {e}"
+
+
+print(tail([1,2,3,4,5],2))
+print(tail("Hello, World!", 1))
+print(tail(123456,3))
+print(tail([1,2],5))
