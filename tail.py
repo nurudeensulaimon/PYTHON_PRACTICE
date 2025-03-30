@@ -25,6 +25,10 @@ def tail(sequence, n):
  	return list(sequence[-n:])
 
 
+ssh-keygen -t ed25519 -C "nurudeen.a.sulaimon@gmail.com"
+
+
+
 
 # BONUS 2
 

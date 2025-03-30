@@ -71,7 +71,5 @@ def group_by_lengths(text):
 			lengths[length].append(word)
 		else:
 			lengths[length]=[word]
-
-test= group_by_lengths("I love Kike Rafiu")
-print(test)
+			
 
